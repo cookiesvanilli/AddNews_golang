@@ -1,0 +1,28 @@
+{{ define "header" }}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>News</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/examples/cover/cover.css">
+    <link rel="stylesheet" href="static/css/main.css">
+</head>
+<body class="d-flex flex-column h-100 text-center text-white bg-dark">
+<div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+        <div class="d-flex justify-content-between">
+            <h3 class="float-md-start mb-0">Go News</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+                <a class="nav-link" href="/create/">Create post</a>
+                <a class="nav-link" href="/contacts/">Contacts</a>
+            </nav>
+        </div>
+    </header>
+
+</div>
+
+{{ end }}

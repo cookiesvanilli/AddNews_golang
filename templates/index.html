@@ -1,0 +1,26 @@
+{{ define "index" }}
+
+    {{ template "header" }}
+
+    <main role="main" class=" cover inner px-3 py-3 ">
+        <h4 class="cover-heading">Main page</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan sit amet nulla facilisi morbi. Malesuada fames ac turpis egestas maecenas pharetra convallis. Auctor urna nunc id cursus. Proin libero nunc consequat interdum varius sit amet mattis. Eu sem integer vitae justo eget magna. Faucibus a pellentesque sit amet porttitor eget dolor. </p>
+
+        {{ range . }}
+            <div class="alert alert-danger">
+                <h2>{{ .Title }}</h2>
+                <p>{{ .Anons }}</p>
+                <a href="/post/{{ .Id }}" class="btn btn-danger">Read more</a>
+            </div>
+            {{ else }}
+                <p class="lead">There are no articles</p>
+            {{ end }}
+
+        <p class="lead">
+            <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+        </p>
+    </main>
+
+    {{ template "footer" }}
+
+{{ end }}
